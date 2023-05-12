@@ -4,6 +4,4 @@ Rails.application.routes.draw do
 
   resources :articles
   
-  post '/articles', to: 'articles#create'
-  
 end

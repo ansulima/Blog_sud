@@ -1,8 +1,12 @@
 <h1> <%= @article.title %><h1>
 <p> <%= @article.body %></p>
 
-<ul>
-    <li><%= link_to 'Edit', edit_article_path(@article)  %></li>
 
-    <li><%= link_to 'Back', root_path %></li>
+<ul>
+    <li><%= link_to 'Edit', edit_article_path(@article)%>
+        <%= form_with model: @article, url: article_path(@article), method: :delete do |form| %>
+        <li><%= form.submit "Delete", data: { confirm: "Are you sure?" } %></li>
+        <% end %>
+    <li><%= link_to 'Back', root_path%></li>
 </ul>
+ 
