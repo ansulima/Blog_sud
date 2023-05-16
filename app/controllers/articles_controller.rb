@@ -1,7 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: %i[show edit update destroy]
                             # only: [:show, :edit, :update, :destroy]
-
   def index
     @articles = Article.all
   end
@@ -15,13 +14,11 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
-
     if @article.save
       redirect_to @article
     else
       render :new
     end
-
   end
 
   def edit
@@ -50,5 +47,4 @@ class ArticlesController < ApplicationController
   def set_article
     @article = Article.find(params[:id])
   end
-  
 end
