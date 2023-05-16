@@ -1,0 +1,44 @@
+Arguments: 
+  /home/andersonlima/.asdf/installs/nodejs/19.8.1/bin/node /home/andersonlima/.asdf/installs/yarn/1.22.19/bin/yarn.js webpack --version
+
+PATH: 
+  /home/andersonlima/.asdf/plugins/nodejs/shims:/home/andersonlima/.asdf/installs/nodejs/19.8.1/bin:/home/andersonlima/.asdf/installs/yarn/1.22.19/bin:/home/andersonlima/.asdf/shims:/home/andersonlima/.asdf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/andersonlima/.local/share/JetBrains/Toolbox/scripts:/home/andersonlima/.fzf/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  19.8.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/andersonlima/Documentos/Projects/Projects_rails/Blog_sud/package.json: Unexpected token '}', ..."ck": 
+      }
+  }" is not valid JSON
+      at JSON.parse (<anonymous>)
+      at /home/andersonlima/.asdf/installs/yarn/1.22.19/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/home/andersonlima/.asdf/installs/yarn/1.22.19/lib/cli.js:310:30)
+      at /home/andersonlima/.asdf/installs/yarn/1.22.19/lib/cli.js:321:13
+
+npm manifest: 
+  {
+      "name": "blog_sud",
+      "private": true,
+      "dependencies":{
+          "@rails/actioncable": "7.0.4-3",
+          "@rails/activestorage": "7.0.4-3",
+          "@rails/ujs": "7.0.4-3",
+          "@rails/webpacker": "5.4.4",
+          "turbolinks": "5.2.0",
+          "webpack": 
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  
